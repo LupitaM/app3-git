@@ -1,0 +1,356 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tercera Aplicacion</title>
+
+ <!--grupo CSS-->
+ <!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+ <link rel="stylesheet" href="css/tema-app3.min.css"/>
+ <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+ <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+ <!--<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+ <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>-->
+ <!--grupo JavaScrip-->
+ <script src="js/jquery-1.11.2.min.js"></script>
+ <script src="js/jquery.mobile-1.4.5.min.js"></script>
+ <script src="js/acciones.js"></script>
+ <script src="phonegap.js"></script>
+ <script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+ </script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/sustitucion2.jpg')">
+
+  <div data-role="page" id="Principal" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-add-back-btn-theme="a">
+    <h1>CONTAMINACIÓN DEL MEDIO AMBIENTE</h1>
+   </div>
+   <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+     <h1>CONTAMINACIÓN AMBIENTAL</h1>
+      <div>
+      <p>Hagamos conciencia de la destrucción que estamos haciendo con nuestro hogar, nada es para siempre mucho menos la vida de nuestro planeta Tierra.</p>
+      <br>                     
+    </div>
+    <div>
+      <img src="imagenes/imagen1.jpg" width="50%" height="50%">
+    </div>
+   </div>
+  </div>
+  <div>
+   <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-"a">
+   <li class="ui-first-child ui-last-child">
+      <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>DEFINICIÓN</h2>
+         <p>Se muestra, ¿Qué es la contaminación?</p>
+      </a>
+   </li>
+   <li class="ui-first-child ui-last-child">
+       <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+          <h2>TIPOS DE CONTAMINACIÓN</h2>
+          <p>Se muestra los diferentes tipos de contaminación que hay</p>
+       </a>
+    </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>CONSECUENCIAS DE LA CONTAMINACIÓN</h2>
+         <p>Se nuestra las consecuencias que está provocando la contaminación en el mundo</p>
+       </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+       <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>LAS 3 "R"</h2>
+         <p>Se nuestra las reglas de las 3 "R"</p>
+       </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+       <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>MEDIDAS PREVENTIVAS</h2>
+        <p>Se muestran propuestas para evitar seguir contaminando</p>
+       </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>CONTAMINACIÓN EN MI ENTORNO</h2>
+         <p>Se muestra la contaminación en nuestro entorno y algunos métodos para evitar esto</p>
+       </a>
+     </li>
+     </ul>
+   </div>
+   <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+      <div>
+        <img src="imagenes/icono.png" width="46" height="46">
+       </div>
+       <div>
+         <h4>Aplicación Tres</h4>
+         <h4>Guadalupe Morales Morales</h4>
+       </div>
+      </div>
+     </div>
+     
+     <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+       <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+         <h2>¿QUÉ ES LA CONTAMINACIÓN?</h2>
+       </div>
+       <div data-role="content" align="center">
+          <div>
+            <h2>La contaminación es la introducción de sustancias u otros elementos físicos en un medio que provocan que éste sea inseguro o no apto para su uso. El medio puede ser un ecosistema, un medio físico o un ser vivo. El contaminante puede ser una sustancia química, energía (como sonido, calor, luz o radiactividad).</h2>
+          </div>
+       </div>
+       <div>
+       <img src="imagenes/imagen3.jpg" width="515" height="320">
+       </div>
+       <div data-role="footer" data-theme="a" data-position="fixed">
+         <h4>APLICACIÓN UNO, GMM</h4>
+       </div>
+       </div>
+     </div>
+     
+    <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+                <h1>¿CUÁLES SON LOS TIPOS DE CONTAMINACIÓN?</h1>
+              </div>
+              <div data-role="content" align="center">
+<div data-role="collapsible" data-content-theme="false">
+              <h1>CONTAMINACIÓN DEL AGUA</h1>
+              <div>
+              <br>
+              <div>
+              <h1>La contaminación hídrica o contaminación del agua es una modificación de esta, generalmente provocada por el ser humano, que la vuelve impropia o peligrosa para el consumo humano, la industria, la agricultura, la pesca y las actividades recreativas, así como para los animales.</h1>
+              </div>
+              </div>
+              <div>
+              <img src="imagenes/contaminacion1.jpg" width="515" height="320">
+              </div>
+              <div> 
+                </div>
+               </div>
+
+<div data-role="collapsible" data-content-theme="false">
+              <h1>CONTAMINACIÓN DEL AIRE</h1>
+              <div>
+              <br>
+              <div>
+              <h1>La contaminación del aire es una mezcla de partículas sólidas y gases en el aire. Las emisiones de los automóviles, los compuestos químicos de las fábricas, el polvo, el polen y las esporas de moho pueden estar suspendidas como partículas.</h1>
+              </div>
+              </div>
+              <div>
+              <img src="imagenes/contaminacion2.jpg" width="515" height="320">
+              </div>
+              <div> 
+                </div>
+               </div>
+
+<div data-role="collapsible" data-content-theme="false">
+              <h1>CONTAMINACIÓN DEL SUELO</h1>
+              <div>
+              <br>
+              <div>
+              <h1>Las causas más comunes de contaminación del suelo son: Tecnología agrícola nociva (uso de aguas negras o de aguas de ríos contaminados; uso indiscriminado de pesticidas, plaguicidas y fertilizantes peligrosos en la agricultura). Carencia o uso inadecuado de sistemas de eliminación de basura urbana.</h1>
+              </div>
+              </div>
+              <div>
+              <img src="imagenes/contaminacion3.jpg" width="515" height="320">
+              </div>
+              <div> 
+                </div>
+               </div>
+
+<div data-role="collapsible" data-content-theme="false">
+              <h1>CONTAMINACIÓN TÉRMICA</h1>
+              <div>
+              <br>
+              <div>
+              <h1>La contaminación térmica se produce cuando un proceso altera la temperatura del medio de forma indeseada o perjudicial. El medio más habitual donde se produce es en el agua, ya que el aire se disipa más fácilmente.</h1>
+              </div>
+              </div>
+              <div>
+              <img src="imagenes/contaminacion4.jpg" width="515" height="320">
+              </div>
+              <div> 
+                </div>
+               </div>
+
+<div data-role="collapsible" data-content-theme="false">
+              <h1>CONTAMINACIÓN RADIACTIVA</h1>
+              <div>
+              <br>
+              <div>
+              <h1>Se denomina contaminación radiactiva o contaminación nuclear a la presencia no deseada de sustancias radioactivas en el entorno. Esta contaminación puede proceder de radioisótopos naturales o artificiales.</h1>
+              </div>
+              </div>
+              <div>
+              <img src="imagenes/contaminacion5.jpg" width="515" height="320">
+              </div>
+              <div> 
+                </div>
+               </div>
+
+<div data-role="collapsible" data-content-theme="false">
+              <h1>CONTAMINACIÓN ACÚSTICA</h1>
+              <div>
+              <br>
+              <div>
+              <h1>El término contaminación acústica hace referencia al ruido (entendido como sonido excesivo y molesto), provocado por las actividades humanas (tráfico, industrias, locales de ocio, aviones, etc.), que produce efectos negativos sobre la salud auditiva, física y mental de los seres vivos.</h1>
+              </div>
+              </div>
+              <div>
+              <img src="imagenes/contaminacion6.gif" width="515" height="320">
+              </div>
+              <div> 
+                </div>
+               </div>
+
+<div data-role="collapsible" data-content-theme="false">
+              <h1>CONTAMINACIÓN LUMÍNICA</h1>
+              <div>
+              <br>
+              <div>
+              <h1>La contaminación lumínica es el brillo o resplandor de luz en el cielo nocturno producido por la reflexión y difusión de luz artificial en los gases y en las partículas del aire por el uso de luminarias inadecuadas o por excesos de iluminación.</h1>
+              </div>
+              </div>
+              <div>
+              <img src="imagenes/contaminacion7.png" width="515" height="320">
+              </div>
+              </div>
+                  <div data-role="footer" data-theme="a" data-position="fixed">
+         <h4>APLICACION TRES, GMM</h4> 
+                </div>
+               </div>
+               </div>
+               
+    <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+                <h1>¿CUÁLES SON LAS CONSECUENCIAS DE LA CONTAMINACIÓN?</h1>
+              </div>
+              <div data-role="content" align="center">
+<div data-role="collapsible" data-content-theme="false">
+              <h1>CALENTAMIENTO GLOBAL</h1>
+              <div>
+              <br>
+              <div>
+              <h1>Calentamiento global y cambio climático se refieren al aumento observado en los últimos siglos de la temperatura del sistema climático de la Tierra y sus efectos.</h1>
+              </div>
+              </div>
+              <div>
+              <img src="imagenes/calentamiento.jpg" width="515" height="320">
+              </div>
+              </div> 
+              <div data-role="footer" data-theme="a" data-position="fixed">
+         <h4>APLICACIÓN TRES, GMM</h4> 
+                </div>
+                </div>
+               </div>
+     
+    <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+                <h1>LA REGLA DE LAS 3 "R"</h1>
+              </div>
+              <div data-role="content" align="center">
+             <h1>REUSAR, REUTILIZAR Y RECICLAR</h1>
+              <div>
+              <br>
+              <div>
+              <h1>Lo que estas reglas tratan de hacer es ser promovidas por todo el mundo y con ello poder hacer de la contaminación algo más ligero, es decir, con ellas hacer que lo que desechamos lo volvamos a utilizar</h1>
+              </div>
+              </div>
+              <div>
+              <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image17','','imagenes/sustitucion1.jpg',1)"><img src="imagenes/sustitucion2.jpg" width="1525" height="625" id="Image17"></a>
+              </div>
+              </div> 
+              <div data-role="footer" data-theme="a" data-position="fixed">
+         <h4>APLICACIÓN TRES, GMM</h4> 
+                </div>
+                </div>
+               </div>
+     
+     <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+       <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+         <h1>MEDIDAS PREVENTIVAS</h1>
+       </div>
+       <div data-role="content" align="center">
+          <div>
+            <h2>Algunas de las medidas preventivas que podemos seguir son las siguentes:</h2>
+            <h2>-Aplicar la regla de las 3 "R"</h2>
+            <h2>-Cepillarse los dientes con un vaso de agua</h2>
+            <h2>-Reutilizar bolsas y botellas de plastico</h2>
+            <h2>-Sembrar árboles y plantas(flores, arbustos, etcétera)</h2>
+          </div>
+            <img src="imagenes/imagen2.jpg" width="515" height="320">
+            <a href="http://www.profepa.gob.mx/" target="_self" >Ir a la página de prevención</a>
+          </div>
+       <div data-role="footer" data-theme="a" data-position="fixed">
+         <h4>APLICACIÓN TRES, GMM</h4>
+       </div>
+         </div>
+     </div>
+
+       <div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+       <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+         <h1>CONTAMINACIÓN EN MI ENTORNO</h1>
+       </div>
+       <div data-role="content" align="center">
+          <div>
+            <h2>Algunas de las medidas de prevención que doy son las siguientes:</h2>
+            <h2>*Promover que el camión de la basura pase más seguido y más temprano</h2>
+            <h2>*Realizar las averiguaciones necesarias para saber quien o quines realizaron destrucción privada (graffitear las paredes de los vecinos)</h2>
+            <h2>*Día de fiestas (fiestas patronales, mayordomias, cierre de carnaval, etcétera), procurar no usar cosas desechables (vasos, platos, etc.)</h2>
+            <h2>*Conservar en buen estado los jardines del zócalo es implica el cuidado de las plantas, árboles e instalaciones</h2>
+            <h2>*No ir a tirar la basura a las barrancas ó campos</h2> 
+          </div>
+                     <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/imagen4.jpg" alt="imagen4" title="imagen4" id="wows1_0"/></li>
+		<li><img src="data1/images/imagen5.jpg" alt="imagen5" title="imagen5" id="wows1_1"/></li>
+		<li><img src="data1/images/imagen6.jpg" alt="imagen6" title="imagen6" id="wows1_2"/></li>
+		<li><a href="http://wowslider.net"><img src="data1/images/imagen7.jpg" alt="wowslider.net" title="imagen7" id="wows1_3"/></a></li>
+		<li><img src="data1/images/imagen8.jpg" alt="imagen8" title="imagen8" id="wows1_4"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="imagen4"><span><img src="data1/tooltips/imagen4.jpg" alt="imagen4"/>1</span></a>
+		<a href="#" title="imagen5"><span><img src="data1/tooltips/imagen5.jpg" alt="imagen5"/>2</span></a>
+		<a href="#" title="imagen6"><span><img src="data1/tooltips/imagen6.jpg" alt="imagen6"/>3</span></a>
+		<a href="#" title="imagen7"><span><img src="data1/tooltips/imagen7.jpg" alt="imagen7"/>4</span></a>
+		<a href="#" title="imagen8"><span><img src="data1/tooltips/imagen8.jpg" alt="imagen8"/>5</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com/vi">slider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+          </div>
+       <div data-role="footer" data-theme="a" data-position="fixed">
+         <h4>APLICACIÓN TRES, GMM</h4>
+       </div>
+         </div>
+     </div>
+     
+     
+</body>
+</html>
